@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Graphix</string>
+    <string name="hello">Hello</string>
+    <string name="baraa" />
+    <string name="enter_your_name">Enter your name</string>
+    <string name="graphix">Graphix</string>
+    <string name="create_new">Create New</string>
+    <string name="collage">COLLAGE</string>
+    <string name="video">VIDEO</string>
+    <string name="photo">PHOTO</string>
+    <string name="t">T</string>
+</resources>

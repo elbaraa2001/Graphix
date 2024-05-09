@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/background_color">
+
+
+
+        <TextView
+            android:id="@+id/create_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freeman"
+            android:text="@string/create_new"
+            android:textColor="#616161"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="60dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/select_image_card"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardBackgroundColor="#F66467"
+            app:cardCornerRadius="999dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/select_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#F66467"
+                android:contentDescription="@string/photo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/photo_img"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freeman"
+            android:text="@string/photo"
+            android:textColor="#616161"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/select_image_card"
+            app:layout_constraintStart_toStartOf="@id/select_image_card"
+            android:layout_marginStart="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
